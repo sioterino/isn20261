@@ -74,8 +74,6 @@ flowchart TD
             pn[Processador N]
         end
 
-        l[Log]
-
         subgraph BDs[Bancos de Dados]
             ca[Cache]
             sql[SQL]
@@ -93,7 +91,5 @@ flowchart TD
     P --> ch
     P --> ca
     P --> sql
-
-    l --> b
-    l --> tsdb
+    P --> tsdb
 ```
